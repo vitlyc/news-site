@@ -4,9 +4,10 @@
     "description": "",
     "main": "index.js",
     "scripts": {
-        "dev": "next",
         "build": "next build",
-        "start": "next start"
+        "start": "next start",
+        "serve": "ts-node -O '{\"module\": \"commonjs\"}' ./server/index.ts",
+        "dev": "concurrently --kill-others \"npm run serve\" \"next\""
     },
     "repository": {
         "type": "git",
