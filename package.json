@@ -1,33 +1,42 @@
 {
-    "name": "news-site",
-    "version": "1.0.0",
-    "description": "",
-    "main": "index.js",
-    "scripts": {
-        "build": "next build",
-        "start": "next start",
-        "serve": "ts-node -O '{\"module\": \"commonjs\"}' ./server/index.ts",
-        "dev": "concurrently --kill-others \"npm run serve\" \"next\""
-    },
-    "repository": {
-        "type": "git",
-        "url": "git+https://github.com/vitlyc/news-site.git"
-    },
-    "keywords": [],
-    "author": "",
-    "license": "ISC",
-    "bugs": {
-        "url": "https://github.com/vitlyc/news-site/issues"
-    },
-    "homepage": "https://github.com/vitlyc/news-site#readme",
-    "dependencies": {
-        "@types/node": "^18.11.18",
-        "@types/react": "^18.0.27",
-        "@types/styled-components": "^5.1.26",
-        "next": "^13.1.6",
-        "react": "^18.2.0",
-        "react-dom": "^18.2.0",
-        "styled-components": "^5.3.6",
-        "typescript": "^4.9.5"
-    }
+  "name": "news-site",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "next build",
+    "start": "next start",
+    "serve": "node  ./server/index.js",
+    "dev": "concurrently --kill-others \"npm run serve\" \"next\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vitlyc/news-site.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/vitlyc/news-site/issues"
+  },
+  "homepage": "https://github.com/vitlyc/news-site#readme",
+  "dependencies": {
+    "@types/styled-components": "^5.1.7",
+    "babel-plugin-styled-components": "^1.12.0",
+    "body-parser": "^1.20.1",
+    "concurrently": "^6.0.0",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "next": "^12.3.4",
+    "node-fetch": "^2.6.1",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1",
+    "styled-components": "^5.2.1",
+    "ts-node": "^9.1.1"
+  },
+  "devDependencies": {
+    "@types/node": "^14.14.31",
+    "@types/react": "^17.0.53",
+    "typescript": "^4.2.2"
+  }
 }

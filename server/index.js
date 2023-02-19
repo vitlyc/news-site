@@ -1,6 +1,10 @@
-import express from "express"
-import cors from "cors"
-import bodyParser from "body-parser"
+// import express from "express"
+// import cors from "cors"
+// import bodyParser from "body-parser"
+// export {}
+const express = require("express")
+const cors = require("cors")
+const bodyParser = require("body-parser")
 
 const categories = require("./categories.json")
 const posts = require("./posts.json")
@@ -18,7 +22,4 @@ app.get("/posts", (_, res) => {
 app.get("/categories", (_, res) => {
   return res.json(categories)
 })
-
-app.listen(port, () =>
-  console.log(`DB is running on http://localhost:${port}!`)
-)
+app.listen(port, () => console.log(`DB is running on http://localhost:${port}!`))
