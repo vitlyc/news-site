@@ -7,7 +7,7 @@ export const Footer = () => {
   return (
     <Container>
       <Center>
-        <a href="#">Newline.co</a> {currentYear}
+        <a href="https://newline.co">Newline.co</a> {currentYear}
       </Center>
     </Container>
   )

@@ -1,12 +1,12 @@
 import Link from "next/link"
 import { Post as PostType } from "../../shared/types"
-import { Card, Figure, Title, Lead } from "./style"
+import { Card, Figure, Title, Lead } from "./PostCardStyle"
 
 type PostProps = {
   post: PostType
 }
 
-export const Post = ({ post }: PostProps) => {
+export const PostCard = ({ post }: PostProps) => {
   return (
     <Link href={`/post/${post.id}`} passHref>
       <Card>

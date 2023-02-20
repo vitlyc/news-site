@@ -7,7 +7,7 @@ export const Header = () => {
     <Container>
       <Center>
         <Logo>
-          <Link href="/" legacyBehavior>
+          <Link href="/">
             <a>What's Next?!</a>
           </Link>
         </Logo>

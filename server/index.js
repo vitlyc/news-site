@@ -19,6 +19,12 @@ app.get("/posts", (_, res) => {
   return res.json(posts)
 })
 
+app.get("/posts/:id", (req, res) => {
+  const wantedId = String(req.params.id)
+  const post = posts.find(({ id }) => String(id) === wantedId)
+  return res.json(post)
+})
+
 app.get("/categories", (_, res) => {
   return res.json(categories)
 })
