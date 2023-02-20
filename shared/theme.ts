@@ -1,4 +1,4 @@
-import { createGlobalStyle, ThemeProps } from "styled-components"
+import { createGlobalStyle, ThemeProps } from "styled-components";
 
 export const theme = {
   fonts: {
@@ -9,10 +9,11 @@ export const theme = {
     orange: "#f4ae40",
     blue: "#387af5",
     pink: "#eb57a3",
+    // Credits: https://colors.lol/fou.
   },
-}
+};
 
-export type MainThemeProps = ThemeProps<typeof theme>
+export type MainThemeProps = ThemeProps<typeof theme>;
 export const GlobalStyle = createGlobalStyle<MainThemeProps>`
   body {
     margin: 0;
@@ -33,4 +34,4 @@ export const GlobalStyle = createGlobalStyle<MainThemeProps>`
     padding: 70px 0 20px;
     min-height: calc(100vh - 50px);
   }
-`
+`;
