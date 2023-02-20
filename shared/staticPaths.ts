@@ -1,17 +1,19 @@
-import { EntityId } from "./types"
+import { Category } from "./types"
 
-type PostStaticParams = {
-  id: EntityId
+type CategoryStaticParams = {
+  id: Category
 }
 
-type PostStaticPath = {
-  params: PostStaticParams
+type CategoryStaticPath = {
+  params: CategoryStaticParams
 }
 
-const staticPostsIdList: EntityId[] = [1, 2, 3, 4, 5, 6, 7, 8, 9]
+const categoriesToPreRender: Category[] = [
+  "Science",
+  "Technology",
+  "Arts"
+]
 
-export const postPaths: PostStaticPath[] = staticPostsIdList.map(
-  (id) => ({
-    params: { id: String(id) }
-  })
+export const categoryPaths: CategoryStaticPath[] = categoriesToPreRender.map(
+  (category) => ({ params: { id: category } })
 )

@@ -13,11 +13,13 @@ export const Feed = ({ posts, categories }: FeedProps) => {
         const inSection = posts.filter(
           (post) => post.category === category
         )
+
         return (
           <Section
             key={category}
             title={category}
             posts={inSection}
+            isCompact
           />
         )
       })}
