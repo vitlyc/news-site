@@ -15,11 +15,15 @@ const Main = styled.h2`
   width: 100%;
 `
 
+const Description = styled.div`
+  width: 100%;
+`
+
 const NotFound = () => {
   return (
     <Container>
       <Main>404</Main>
-      Oops! The page not found!
+      <Description>Oops! The page not found!</Description>
     </Container>
   )
 }

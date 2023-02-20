@@ -1,10 +1,10 @@
 import { GetStaticProps } from "next"
 import { useRouter } from "next/router"
+import { categoryPaths } from "../../shared/staticPaths"
 import { Post } from "../../shared/types"
 import { fetchPosts } from "../../api/category"
 import { Section } from "../../components/Section"
 import { Loader } from "../../components/Loader"
-import { categoryPaths as paths } from "../../shared/staticPaths"
 
 type CategoryProps = {
   posts: Post[]
@@ -19,7 +19,7 @@ export const getStaticProps: GetStaticProps<CategoryProps> = async ({
 }
 
 export async function getStaticPaths() {
-  return { paths, fallback: true }
+  return { paths: categoryPaths, fallback: true }
 }
 
 const Category = ({ posts }: CategoryProps) => {
